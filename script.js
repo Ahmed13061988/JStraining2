@@ -53,14 +53,27 @@
 // let yearsUntil = yearsUntilRetirment(1988, `Ahmed`);
 // console.log(yearsUntil);
 
-function cutFruitsPieces(fruit) {
-    return fruit * 4;
-};
+// function cutFruitsPieces(fruit) {
+//     return fruit * 4;
+// };
 
-function fruitProcessor(apples, oranges) {
-    const applePieces = cutFruitsPieces(apples);
-    const orangePieces = cutFruitsPieces(oranges);
-    const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces}  pieces of orange`;
-    return juice;
-};
-console.log(fruitProcessor(2, 3));
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitsPieces(apples);
+//     const orangePieces = cutFruitsPieces(oranges);
+//     const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces}  pieces of orange`;
+//     return juice;
+// };
+// console.log(fruitProcessor(2, 3));
+
+function calcAge(birthYear) {
+    return 2022 - birthYear;
+}
+
+const yearsUntilRetirment = (birthYear, fristName) => {
+    const age = calcAge(birthYear);
+    const retirment = 65 - age;
+    const statement = retirment > 0 ? `${fristName}, will retire after ${retirment} years!` : `${fristName}, already retired 🎉!`
+    console.log(statement);
+}
+yearsUntilRetirment(1995, `Atyaf`);
+yearsUntilRetirment(1988, `Ahmed`);
