@@ -78,20 +78,30 @@
 // yearsUntilRetirment(1995, `Atyaf`);
 // yearsUntilRetirment(1988, `Ahmed`);
 
-const calcAvarage = (value1, value2, value3) => (value1 + value2 + value3) / 3;
+// const calcAvarage = (value1, value2, value3) => (value1 + value2 + value3) / 3;
 
-const checkWinner = function (aveDolphins, aveKoalas) {
-    if (aveDolphins >= aveKoalas * 2) {
-        return `Dolphins wins ${aveDolphins} vs ${aveKoalas}`
-    } else if (aveKoalas >= aveDolphins * 2) {
-        return `Koalas wins ${aveKoalas} vs ${aveKoalas}`
-    } else {
-        return -1;
-    }
-}
+// const aveDolphins = calcAvarage(85, 54, 41);
+// const aveKoalas = calcAvarage(23, 34, 27);
 
-const aveDolphins = calcAvarage(85, 54, 41);
-const aveKoalas = calcAvarage(23, 34, 27);
+// const checkWinner = function (aveDolphins, aveKoalas) {
+//     if (aveDolphins >= aveKoalas * 2) {
+//         return `Dolphins wins ${aveDolphins} vs ${aveKoalas}`
+//     } else if (aveKoalas >= aveDolphins * 2) {
+//         return `Koalas wins ${aveKoalas} vs ${aveKoalas}`
+//     } else {
+//         return -1;
+//     }
+// }
 
-const winner = checkWinner(aveDolphins, aveKoalas);
-console.log(winner);
+// const winner = checkWinner(aveDolphins, aveKoalas);
+// console.log(winner);
+
+const friend1 = "Micheal";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = [`Micheal`, `Steven`, `Peter`];
+console.log(friends);
+
+const years = new Array(1991, 1988, 1995, 1954);
+console.log(years);
