@@ -28,11 +28,12 @@ const ahmed1 = {
     job: `Web Developer`,
     friends: [`Wael`, `Ahmed`, `Ayman`],
     hasDriversLicense: true,
-
     calcAge: function (birthYear) {
-        2022 - birthYear;
+        return 2022 - birthYear;
     }
 }
+console.log(ahmed1.calcAge(1988));
+console.log(ahmed1[`calcAge`](1988)); //brackets calling for the element.
 
 
 
