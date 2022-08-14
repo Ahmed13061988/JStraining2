@@ -142,3 +142,8 @@ friends.unshift("Ali"); //it will add element to the beggining of the array
 console.log(friends);
 friends.pop(); // it will delete the last emlement from the array and we don't pass any argument to it, because it will delete always the last elemnt. 
 console.log(friends);
+friends.shift(); // it will remove the first element from the array 
+console.log(friends);
+console.log(friends.indexOf('Micheal'));
+console.log(friends.indexOf('Moh'));
+console.log(friends.includes('Ahmed')); // it will return boolean value as true or false, it will use strict equallity operator ===. 
