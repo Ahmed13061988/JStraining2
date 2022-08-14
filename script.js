@@ -147,3 +147,34 @@ console.log(friends);
 console.log(friends.indexOf('Micheal'));
 console.log(friends.indexOf('Moh'));
 console.log(friends.includes('Ahmed')); // it will return boolean value as true or false, it will use strict equallity operator ===. 
+
+
+const tipCalc = bill => {
+    if (bill <= 300 && bill >= 50) {
+        return bill * 0.15;
+    } else {
+        return bill * 0.2;
+    }
+}
+
+const bills = [125, 555, 44];
+
+const tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
+// console.log(tips);
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(total);
+
+const tip1 = [];
+
+for (let i = 0; i < bills.length; i++) {
+    tip1.push(tipCalc(bills[i]));
+}
+const total1 = [];
+for (let i = 0; i < bills.length; i++) {
+    total1.push(bills[i] + tip1[i]);
+}
+
+console.log(tip1);
+console.log(total1);
