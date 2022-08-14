@@ -101,7 +101,30 @@ const friend2 = "Steven";
 const friend3 = "Peter";
 
 const friends = [`Micheal`, `Steven`, `Peter`];
-console.log(friends);
+// console.log(friends);
 
-const years = new Array(1991, 1988, 1995, 1954);
-console.log(years);
+// const years = new Array(1991, 1988, 1995, 1954);
+// console.log(years);
+
+// console.log(friends[0, 1]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+friends[2] = `Moh`;
+// console.log(friends); // changing the array
+let birthYear = 1988;
+const ahmed = [`Ahmed`, `Hussein`, 2022 - birthYear, friends];
+// console.log(ahmed);
+// console.log(ahmed[ahmed.length - 1]);
+
+function calcAge(birthYear) {
+    return 2022 - birthYear;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const newYears = [];
+for (let i = 0; i < years.length; i++) {
+    const x = calcAge(years[i]);
+    newYears.push(x);
+}
+console.log(newYears);
