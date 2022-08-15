@@ -19,4 +19,9 @@ for (let i = 0; i < years.length; i++) {
 
     ages.push(2022 - years[i]);
 }
-console.log(ages);
+//console.log(ages);
+console.log(`----ONLY STRINGS----`)
+for (let i = 0; i < ahmed.length; i++) {
+    if (typeof ahmed[i] !== `string`) continue;
+    console.log(ahmed[i], typeof ahmed[i]);
+}
