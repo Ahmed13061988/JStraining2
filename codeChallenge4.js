@@ -20,11 +20,16 @@ console.log(bills, tips, totals);
 let sum = 0;
 
 const calcAvarage = function (arr) {
+    let newArray = [];
     for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
+        if (typeof arr[i] === 'number') {
+            sum += arr[i];
+            newArray.push(arr[i]);
+        }
     }
-    return sum / arr.length;
+    console.log(newArray);
+    return sum / newArray.length;
 }
 
-arr = [2, 3, 7];
+arr = [2, 3, 7, 'hello'];
 console.log(calcAvarage(arr)); 
