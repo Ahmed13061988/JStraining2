@@ -20,13 +20,17 @@ for (let i = 0; i < years.length; i++) {
     ages.push(2022 - years[i]);
 }
 //console.log(ages);
-console.log(`----ONLY STRINGS----`)
-for (let i = 0; i < ahmed.length; i++) {
-    if (typeof ahmed[i] !== `string`) continue;
-    console.log(ahmed[i], typeof ahmed[i]);
-}
-console.log(`----BREAK WITH NUMBERS----`)
-for (let i = 0; i < ahmed.length; i++) {
-    if (typeof ahmed[i] === 'number') break;
+// console.log(`----ONLY STRINGS----`)
+// for (let i = 0; i < ahmed.length; i++) {
+//     if (typeof ahmed[i] !== `string`) continue;
+//     console.log(ahmed[i], typeof ahmed[i]);
+// }
+// console.log(`----BREAK WITH NUMBERS----`)
+// for (let i = 0; i < ahmed.length; i++) {
+//     if (typeof ahmed[i] === 'number') break;
+//     console.log(ahmed[i]);
+// }
+
+for (let i = ahmed.length - 1; i >= 0; i--) {
     console.log(ahmed[i]);
 }
