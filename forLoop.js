@@ -32,5 +32,16 @@ for (let i = 0; i < years.length; i++) {
 // }
 
 for (let i = ahmed.length - 1; i >= 0; i--) {
-    console.log(ahmed[i]);
+    //console.log(ahmed[i]);
 }
+
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`---- Starting exercise ${exercise}`);
+
+    for (rep = 1; rep < 6; rep++) {
+        console.log(`Exercise No: ${exercise}, Lifting weight repetition${rep}`);
+    }
+}
+
+
