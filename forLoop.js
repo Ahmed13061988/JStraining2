@@ -25,3 +25,8 @@ for (let i = 0; i < ahmed.length; i++) {
     if (typeof ahmed[i] !== `string`) continue;
     console.log(ahmed[i], typeof ahmed[i]);
 }
+console.log(`----BREAK WITH NUMBERS----`)
+for (let i = 0; i < ahmed.length; i++) {
+    if (typeof ahmed[i] === 'number') break;
+    console.log(ahmed[i]);
+}
